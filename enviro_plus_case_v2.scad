@@ -71,7 +71,7 @@ module box(){
         translate([25.5,0,0]) cube([th,li+th,2.5*th]);
         translate([-27.5,0,0]) cube([th,li+th,2.5*th]);
     }
-    translate([-w/2-2*th,15.5,0]) cube([wi+th,th,2.5*th]);
+    translate([-w/2-2*th,15.5,0]) cube([wi+th,th,th]);
 
     // particle sensor top
     color("red")
@@ -206,14 +206,6 @@ module top_hole() {
 
     translate([-w/2+5.5,-l/2+8.5,-20]) cube([x_opening-10,y_opening,100]);
     translate([-w/2+.5,-l/2+13,-20]) cube([x_opening,y_opening-10,100]);
-
-    // translate([-w/2+.5+5,-l/2+.5,-20]) {
-    //     cube([x_opening-10,y_opening,100]);
-    //     //cube([wi-2*th-3,li-2*th-3,100]);
-    // }
-
-    // translate([-w/2+.5,-l/2+.5+5,-20])
-    //     cube([x_opening,y_opening-10,100]);
 }
 
 /** derived objects **/
@@ -310,7 +302,7 @@ if (renderItems == "both" || renderItems == "box")
         translate([-25,-30,particle_height-5]) cube([20,10,5]);
 
         // raspi -- usb ports
-        translate([-2,-30,particle_height+10]) {
+        translate([0,-30,particle_height+10]) {
             cube([28,10,10]);
         }
 
