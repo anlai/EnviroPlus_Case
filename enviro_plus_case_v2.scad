@@ -1,18 +1,6 @@
 // V 1.2 Correction / hint from molotok3D, some minor fixes
 // V 1.1- added opening helper and an optional separating wall
 
-// Width (inner size, in mm)
-wi=70;
-
-// Length (inner size, in mm)
-li=47;
-
-// Height (inner size, in mm)
-h=47;
-
-// Radius of the Rounded Corners
-r=3;
-
 // Opening Help Gap
 opening_help=true;	 // [true,false]
 
@@ -26,7 +14,11 @@ showComponents=true; // [true,false]
 renderItems="both"; // [both,box,cover]
 
 /* [Hidden] */
-th=2;	// wall thickness
+wi=70; // Width (inner size, in mm)
+li=47; // Length (inner size, in mm)
+h=47; // Height (inner size, in mm)
+r=3; // Radius of the Rounded Corners
+th=2; // wall thickness
 
 e=0.01;
 ri=(r>th)?r-th:e;	// needed for the cover - needs to be larger than 0 for proper results
