@@ -73,10 +73,6 @@ module box(){
     }
     translate([-w/2-2*th,15.5,0]) cube([wi+th,th,th]);
 
-    // particle sensor top
-    color("red")
-    translate([-w/2-2*th,-23.5,particle_height+.25]) cube([wi+th,th,th]);
-
     // lower supports for the pi
     translate([-w/2-2*th,-l/2-th+1,particle_height])
         rotate([90,0,90]) prism(li-2*th,10,10);
